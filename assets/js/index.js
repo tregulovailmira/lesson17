@@ -8,14 +8,14 @@ function handler(event) {
     console.log(event.currentTarget.tagName);
 }
 
-list.addEventListener('click', handler, {
+document.getElementById('list').addEventListener('click', handler, {
     capture: true,
 });
 
-item.addEventListener('click', handler, {
+document.getElementById('item').addEventListener('click', handler, {
     capture: true,
 });
 
-div.addEventListener('click', handler, {
+document.getElementById('div').addEventListener('click', handler, {
     capture: true,
 });
